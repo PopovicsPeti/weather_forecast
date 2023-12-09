@@ -3,7 +3,7 @@
     <img src="../assets/logo.png" alt="weather logo">
   </div>
   <div>
-    <p class="main-title">Weather forecast</p>
+    <p class="main-title">Weather forcast</p>
     <p class="secondary-title">for the next 120 hour</p>
   </div>
 </mat-toolbar>
@@ -15,6 +15,10 @@
                             (weatherDataArrayChanged)="weatherDataArray = $event">
           </app-autocomplete>
         </div>
+        <!-- <div class="btn-container">
+          <button class="main-btn" (click)="fetchSpecificWeather()"> weather</button>
+        </div> -->
+
         <div class="city-name">
           <div class="sun-info" *ngIf="fromPlaceValue.name">
             <div>
