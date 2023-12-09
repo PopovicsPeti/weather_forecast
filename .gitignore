@@ -5,6 +5,8 @@
 /tmp
 /out-tsc
 /bazel-out
+/.firebase
+/.vscode
 
 # Node
 /node_modules
@@ -19,6 +21,10 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+.firebase.json
+.firebaserc
+karma.conf.js
+README.md
 
 # Visual Studio Code
 .vscode/*
