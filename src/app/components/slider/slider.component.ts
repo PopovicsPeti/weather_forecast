@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { WeatherData } from '../../models/weather.data.interface';
-import { PlaceSearchResult } from '../../models/place-search-result.interface';
+import { PlaceSearchResult } from '../../models/Place.Search.Result.interface';
 import {} from 'googlemaps';
 import { PlacesService } from '../../services/places.service';
 

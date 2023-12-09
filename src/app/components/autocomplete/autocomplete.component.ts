@@ -7,7 +7,7 @@ import { Component,
           EventEmitter, 
           NgZone
         } from '@angular/core';
-import { PlaceSearchResult } from '../../models/place-search-result.interface';
+import { PlaceSearchResult } from '../../models/Place.Search.Result.interface';
 import {} from 'googlemaps';
 import { WeatherData } from '../../models/weather.data.interface';
 import { PlacesService } from '../../services/places.service';
