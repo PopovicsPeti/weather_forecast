@@ -2,7 +2,7 @@
   <div class="logo">
     <img src="../assets/logo.png" alt="weather logo">
   </div>
-  <div>
+  <div class="primary-header-text">
     <p class="main-title">Weather forcast</p>
     <p class="secondary-title">for the next 120 hour</p>
   </div>
@@ -15,9 +15,6 @@
                             (weatherDataArrayChanged)="weatherDataArray = $event">
           </app-autocomplete>
         </div>
-        <!-- <div class="btn-container">
-          <button class="main-btn" (click)="fetchSpecificWeather()"> weather</button>
-        </div> -->
 
         <div class="city-name">
           <div class="sun-info" *ngIf="fromPlaceValue.name">

@@ -70,9 +70,3 @@ export class AutocompleteComponent implements OnInit {
     });
   })}
 }
-
-
-
-
-
-

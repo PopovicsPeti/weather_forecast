@@ -2,9 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
+    height: 3rem;
 
     .logo {
-        width: 3rem;
+        width: 2rem;
 
         img {
             width: 100%;
@@ -15,66 +16,133 @@
         margin: 0;
         padding: 0;
     }
+    &-text{
+        display: flex;
 
-    .main-title {
-        font-size: 1.5rem;
-        font-weight: 800;
-        margin-bottom: -.5rem
-    }
-
-    .secondary-title {
-        font-size: .8rem;
-        font-weight: 400;
-        text-align: center;
-    }
-}
-
-.search-panel {
-    display: flex;
-    place-items: center;
-
-    .btn-container {
-        margin-left: 1rem;
-
+        .main-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: -.5rem;
+            margin-right: .5rem;
+        }
     
-        .main-btn {
-            background: rgb(147, 189, 236);
-            border: 1px solid rgb(12, 93, 185);
-            padding: .5rem 1.5rem;
-            border-radius: .5rem;
+        .secondary-title {
+            font-size: .6rem;
+            font-weight: 400;
+            text-align: center;
+            margin-top: -.4rem;
         }
     }
+}
 
-    .city-name {
-        .sun-info {
-            display: flex;
-            margin-left: 2rem;
-            justify-content: center;
-
-            div {
-                padding-top: .5rem
-            }
-
-            h2 {
-                margin-left: .5rem;
-                display: block;
-            }
+.container {
+    .search-panel {
+        display: flex;
+        flex-direction: column;
     
-            p {
-                display: block;
-                margin: .5rem 0 0 1rem;
+        .city-name {
+            .sun-info {
+                display: flex;
+                margin-left: 2rem;
+                justify-content: center;
+    
+                div {
+                    padding-top: .5rem
+                }
+    
+                h2 {
+                    margin-left: .5rem;
+                    display: block;
+                }
+        
+                p {
+                    display: block;
+                    margin: .5rem 0 0 1rem;
+                }
             }
         }
+    
     }
-
+    
+    .errors {
+        position: fixed;
+        display: block;
+        top: 10vh;
+        left: 10vw;
+        width: 80vw;
+        height: 20vh;
+    }    
 }
 
-.errors {
-    position: fixed;
-    display: block;
-    top: 10vh;
-    left: 10vw;
-    width: 80vw;
-    height: 20vh;
+@media (min-width: 768px) {
+    .container {
+        .search-panel {
+            flex-direction: column;
+            place-items: center;
+
+            .search-input {
+                width: 100%;
+            }
+        
+            .city-name {
+                margin-bottom: 1rem;
+                .sun-info {
+                   
+        
+                    div {
+                        
+                    }
+        
+                    h2 {
+                        
+                    }
+            
+                    p {
+                       
+                    }
+                }
+            }
+        
+        }
+        
+        .errors {
+
+        }    
+    }
 }
 
+@media (min-width: 768px) {
+    .container {
+        .search-panel {
+            flex-direction: row!important;
+
+            .search-input {
+                width: 50%;
+            }
+        
+            .city-name {
+                margin-bottom: 1rem;
+                .sun-info {
+                   
+        
+                    div {
+                        
+                    }
+        
+                    h2 {
+                        
+                    }
+            
+                    p {
+                       
+                    }
+                }
+            }
+        
+        }
+        
+        .errors {
+
+        }    
+    }
+}
