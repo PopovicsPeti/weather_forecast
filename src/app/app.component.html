@@ -8,7 +8,7 @@
   </div>
 </mat-toolbar>
 <div class="container">
-  <div class="row">
+  <div class="">
     <div class="col-12 my-1 search-panel" >
         <div class="search-input">
           <app-autocomplete (placeChanged)="placeChangeHandler($event) " 
@@ -57,7 +57,7 @@
         </div>
       </div>
 
-      <div class="row my-3">
+      <div class=" my-3">
         <div class="col-12">
           <app-slider  [sunInfoValue]="sunInfo" 
                         [place]="fromPlaceValue"

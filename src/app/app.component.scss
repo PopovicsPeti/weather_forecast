@@ -16,6 +16,7 @@
         margin: 0;
         padding: 0;
     }
+    
     &-text{
         display: flex;
 
@@ -60,6 +61,20 @@
                     margin: .5rem 0 0 1rem;
                 }
             }
+
+            @media (max-width: 480px){
+                .sun-info {
+                    margin-left: -1rem;
+        
+                    div {
+                        padding-top: 0;
+                    }
+        
+                    h2 {
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
     
     }
@@ -86,28 +101,8 @@
         
             .city-name {
                 margin-bottom: 1rem;
-                .sun-info {
-                   
-        
-                    div {
-                        
-                    }
-        
-                    h2 {
-                        
-                    }
-            
-                    p {
-                       
-                    }
-                }
             }
-        
-        }
-        
-        .errors {
-
-        }    
+        }  
     }
 }
 
@@ -122,27 +117,7 @@
         
             .city-name {
                 margin-bottom: 1rem;
-                .sun-info {
-                   
-        
-                    div {
-                        
-                    }
-        
-                    h2 {
-                        
-                    }
-            
-                    p {
-                       
-                    }
-                }
             }
-        
-        }
-        
-        .errors {
-
-        }    
+        } 
     }
 }
